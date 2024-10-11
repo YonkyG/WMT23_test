@@ -4,7 +4,7 @@ all_lans = {'cs': 'Czech', 'de': 'German', 'ru': 'Russian', 'zh': 'Chinese', 'en
 
 def make_jsonl(src, tgt):
     src_file_path = f"./raw_data/test.{src}-{tgt}.{src}"
-    output_file_path = f"./message_data/{src}-{tgt}.{src}.jsonl"
+    output_file_path = f"./message_data/{src}-{tgt}.jsonl"
     with open(src_file_path, 'r', encoding='utf-8') as src_file, open(output_file_path, 'w', encoding='utf-8') as jsonl_file:
         for line in src_file:
             src_sentence = line.strip()  

@@ -1,5 +1,6 @@
 import json
 
+# 生成jsonl文件
 all_lans = {'cs': 'Czech', 'de': 'German', 'ru': 'Russian', 'zh': 'Chinese', 'en': 'English'}
 
 def make_jsonl(src, tgt):
